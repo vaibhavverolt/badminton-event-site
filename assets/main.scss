@@ -1,7 +1,7 @@
 ---
 # Only the main SCSS file requires front matter to tell Jekyll to process it.
 ---
-
+@import "minima";
 @import "minima/skins/air";  // Import existing skin styles
 
 /* Custom styles */
