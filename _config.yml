@@ -1,53 +1,47 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: My Badminton Event
+title: Badminton Championships 2024
 email: contact@badmintonevent.com
-description: >- # this means to ignore newlines until "baseurl:"
-  This is the home of the Badminton Championships 2024.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+description: >
+  Welcome to the official website of the Badminton Championships 2024. Join us to witness top players from around the globe compete for the championship title!
+
+baseurl: ""  # Leave empty if the site is at the root of the domain.
+url: "http://www.badmintonevent.com"  # The base hostname & protocol for your site.
+
+twitter_username: badmintonevent2024
+github_username: badmintonevent
 
 # Build settings
 theme: minima
+minima:
+  skin: "air"  # Using the 'air' skin for a lighter theme, suitable for sports event aesthetics.
+
 plugins:
-  - jekyll-feed
+  - jekyll-feed  # Enables RSS feed
+
+# SEO Plugin for enhancing visibility
+  - jekyll-seo-tag
 
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Additional theme settings to improve aesthetics
+sass:
+  style: compressed  # Minimizes CSS for faster loading times
+
+# Navigation settings
+navigation:
+  - title: "Schedule"
+    url: /schedule/
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
+
+# Adding Google Analytics for tracking (replace with your actual tracking ID)
+google_analytics: UA-XXXXX-Y
