@@ -1,1 +1,24 @@
+---
+# Only the main SCSS file requires front matter to tell Jekyll to process it.
+---
+
+@import "minima/skins/air";  // Import existing skin styles
+
+/* Custom styles */
+body {
+  background-color: #f0f8ff;  // Light blue background for a fresh look
+  color: #036;  // Dark blue text for better readability
+}
+
+.header {
+  background: #001a33;  // Dark blue background for the header
+  color: white;
+}
+
+/* Badminton image banner */
+.banner {
+  background: url('/path/to/your/badminton-image.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
 
